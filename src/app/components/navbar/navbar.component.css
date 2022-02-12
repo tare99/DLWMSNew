@@ -1,0 +1,12 @@
+#navbar{
+  height: 100%;
+  position: fixed;
+  width: 15%;
+  background-color: red;
+  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#navbar a{
+  display: block;
+  padding: 8px 16px;
+}
