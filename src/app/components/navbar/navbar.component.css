@@ -1,11 +1,16 @@
+:root{
+  --white:#ffffff;
+}
+
 #navbar{
   height: 100%;
   position: fixed;
   width: 15%;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  background:radial-gradient(circle, rgba(0,0,0,0.9108018207282913) 30%, rgba(0,0,0,0.9472163865546218) 92%);
+  background: linear-gradient(270deg, #0e0e0e, #111111);
 }
+
 a{
   position: relative;
   cursor: pointer;
@@ -53,4 +58,5 @@ a:hover::before{
 i{
   font-size: 20px;
 }
+
 
