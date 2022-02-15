@@ -13,7 +13,7 @@ import { DokumentiComponent } from './components/dokumenti/dokumenti.component';
     NavbarComponent,
     HomepageComponent,
     ContentComponent,
-    DokumentiComponent
+    DokumentiComponent,
   ],
   imports: [
     BrowserModule,

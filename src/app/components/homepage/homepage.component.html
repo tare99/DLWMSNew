@@ -1,0 +1,26 @@
+<div id="wrapper">
+  <div id="heading"><h2><i class="bi bi-house-door"></i>Obavijesti</h2></div>
+  <div id="inputDiv">
+    <input type="text" placeholder="Pretraga obavijesti...">
+  </div>
+  <table id="bigtable">
+    <tr id="bigrow" *ngFor="let s of niz">
+      <table id="smalltable">
+        <tr>
+          <td [width]="50" rowspan="3"><i class="bi bi-envelope-fill"></i></td>
+          <td><h4 style="color: #158ad8">BP::Teorijski ispit(15.02.2022) : : Spisak studenata</h4></td>
+        </tr>
+        <tr>
+          <td style="font-size:13px;color: gray">14.02.2022 17:28 - Baze podataka Napisao/la Elda Sultić</td>
+        </tr>
+        <tr>
+          <td>Upis ocjena ce se obaviti 19/02/2021 u 15:30. Na upis obavezno donijeti popunjenu i potpisanu prijavu sa tacnim datumom polaganja.</td>
+        </tr>
+      </table>
+      <br>
+    </tr>
+  </table>
+</div>
+<div id="sideDiv">
+  <div></div>
+</div>

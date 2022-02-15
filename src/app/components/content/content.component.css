@@ -1,4 +1,7 @@
 div{
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
   position: absolute;
   left: 10%;
   width: 90%;

@@ -13,6 +13,7 @@
 a{
   --opac:0;
   --trans:scaleY(0);
+  --fitcolor:#158ad8;
   position: relative;
   cursor: pointer;
   color: #ffffff;
@@ -27,9 +28,10 @@ a{
 
 a:hover{
   background-color: rgba(128, 128, 128, 0.1);
+  --fitcolor: white;
 }
 a:hover > i{
-  color: #158ad8;
+  color: var(--fitcolor);
 }
 
 a::before{
@@ -64,10 +66,13 @@ a:active::before{
 }
 i{
   font-size: 20px;
+  color: var(--fitcolor);
 }
 .activebutton{
   --opac: 1;
   --trans:scaleY(1);
+  --fitcolor:white ;
+  background-color:rgba(128, 128, 128, 0.1) ;
 }
 
 

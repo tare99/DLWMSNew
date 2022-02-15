@@ -1,6 +1,48 @@
-div{
+#wrapper{
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 100%;
+  left: 5%;
+}
+#inputDiv{
+  position: absolute;
+  left: 1%;
+  top: 5%;
+}
+input{
+  border-radius: 5px;
+  border: 1px solid black;
+}
+#heading{
+  position: absolute;
+}
+#bigtable{
+  width: 67%;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  position: absolute;
+  top: 9%;
+}
+
+#bigrow{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+#smalltable{
+  margin-right:10px;
+  margin-top: 10px;
+}
+
+i{
+  font-size: 40px;
+  padding-right: 20px;
+  padding-left:20px;
+}
+
+#sideDiv{
+  position: absolute;
+  width: 20%;
+  height: 300px;
   background-color: red;
+  right:9%;
+  top: 9%;
 }

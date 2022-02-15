@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import{HomepageComponent} from "../homepage/homepage.component";
 
 @Component({
   selector: 'app-content',
-  styleUrls: ['./content.component.css'],
-  template:'<div><router-outlet></router-outlet></div>'
+  templateUrl: './content.component.html',
+  styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
 
