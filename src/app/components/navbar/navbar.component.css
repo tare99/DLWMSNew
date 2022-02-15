@@ -1,6 +1,4 @@
-:root{
-  --white:#ffffff;
-}
+
 
 #navbar{
   height: 100%;
@@ -8,10 +6,13 @@
   width: 15%;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  background: linear-gradient(270deg, #0e0e0e, #111111);
+  background: linear-gradient(160deg, #0d0d0d, #292929);
+  z-index: 999;
 }
 
 a{
+  --opac:0;
+  --trans:scaleY(0);
   position: relative;
   cursor: pointer;
   color: #ffffff;
@@ -25,7 +26,7 @@ a{
 }
 
 a:hover{
-  background-color: rgba(128, 128, 128, 0.3);
+  background-color: rgba(128, 128, 128, 0.1);
 }
 a:hover > i{
   color: #158ad8;
@@ -39,12 +40,18 @@ a::before{
   height: 100%;
   width: 3px;
   background-color: #158ad8;
-  opacity: 0;
-  transform: scaleY(0);
+  opacity: var(--opac);
+  transform: var(--trans);
   transition: opacity 0.4s, transform 0.8s;
 }
 
 a:hover::before{
+  --opac: 1;
+  --trans: scaleY(1);
+  opacity: var(--opac);
+  transform: var(--trans);
+}
+a:active::before{
   opacity: 1;
   transform: scaleY(1);
 }
@@ -58,5 +65,14 @@ a:hover::before{
 i{
   font-size: 20px;
 }
+.activebutton{
+  --opac: 1;
+  --trans:scaleY(1);
+}
+
+
+
+
+
 
 
