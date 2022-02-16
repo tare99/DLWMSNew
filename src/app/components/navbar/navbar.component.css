@@ -34,6 +34,8 @@ a:hover > i{
   color: var(--fitcolor);
 }
 
+
+
 a::before{
   content: '';
   position: absolute;
@@ -73,6 +75,23 @@ i{
   --trans:scaleY(1);
   --fitcolor:white ;
   background-color:rgba(128, 128, 128, 0.1) ;
+  animation: jiggle ease-in-out 400ms;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 
