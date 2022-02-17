@@ -7,6 +7,26 @@ html, body {
   height: 100%;
 }
 
+body{
+  background-color: whitesmoke;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #158ad8;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
 *{
   font-family: 'Prompt', sans-serif;
+  scrollbar-width: auto;
+  scrollbar-color: #5479a0 #ffffff;
 }

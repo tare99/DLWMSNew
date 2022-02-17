@@ -14,9 +14,11 @@ input{
 }
 #heading{
   padding-top: 5px;
+  display: flex;
+  flex-direction: row;
 }
 #bigtable{
-  width: 70%;
+  width: 90%;
   border: 1px solid rgba(0, 0, 0, 0.13);
 }
 
@@ -35,32 +37,60 @@ input{
   padding-left:20px;
 }
 
-#sideDiv{
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin-left: 10px;
+}
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #158ad8;
+  padding-right: 40px;
+  color: rgba(0, 0, 0, 0.85);
+}
+.input-search::placeholder{
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
   position: absolute;
-  width: 20%;
-  height: auto;
-  right:2.5%;
-  top: 99px;
+  right: 0px;
+  color:black ;
+  background-color:transparent;
+  pointer-events: painted;
 }
-#prviBlok, #drugiBlok, #treciBlok{
-  box-shadow: -6px 11px 21px 7px rgba(0,0,0,0.08);
-  -webkit-box-shadow: -6px 11px 21px 7px rgba(0,0,0,0.10);
-  -moz-box-shadow: -6px 11px 21px 7px rgba(0,0,0,0.08);
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
-
-#progressBarsDiv{
-  position: absolute;
-  top: 15%;
-  width:  80%;
-  display: flex;
-  flex-direction: column;
-}
-
-.eachGodina{
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  width:  100%;
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 
 

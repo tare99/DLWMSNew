@@ -1,1 +1,8 @@
+div{
+  display: flex;
+  flex-direction: row;
+}
 
+app-content{
+  padding-left: 15%;
+}
