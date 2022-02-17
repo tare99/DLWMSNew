@@ -42,6 +42,27 @@ input{
   right:2.5%;
   top: 99px;
 }
+#prviBlok, #drugiBlok, #treciBlok{
+  box-shadow: -6px 11px 21px 7px rgba(0,0,0,0.08);
+  -webkit-box-shadow: -6px 11px 21px 7px rgba(0,0,0,0.10);
+  -moz-box-shadow: -6px 11px 21px 7px rgba(0,0,0,0.08);
+}
+
+#progressBarsDiv{
+  position: absolute;
+  top: 15%;
+  width:  80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.eachGodina{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width:  100%;
+}
+
 
 
 
