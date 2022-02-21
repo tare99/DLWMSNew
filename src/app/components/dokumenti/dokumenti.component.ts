@@ -9,12 +9,8 @@ export class DokumentiComponent implements OnInit {
 
   constructor() { }
 
-  active:string='';
+  niz:number[]=[1,2,3,4,5,6,7,8,9,1,1,1,1];
 
-  toggleActiveClass():string{
-    this.active==''?this.active='active':this.active='';
-    return this.active;
-  }
 
   ngOnInit(): void {
   }

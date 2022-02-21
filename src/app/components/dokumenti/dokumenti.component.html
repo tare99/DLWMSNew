@@ -5,7 +5,7 @@
   </div>
 
   <div class="list-group">
-    <a (click)="toggleActiveClass()" [ngClass]="toggleActiveClass()" class="list-group-item list-group-item-action" aria-current="true">
+    <a *ngFor="let s of niz" class="list-group-item list-group-item-action" aria-current="true">
       <div class="d-flex justify-content-between w-100">
         <h5 class="mb-1"> BP - P10 - Prevođenje ER modela podataka u R model podataka</h5>
       </div>
@@ -16,22 +16,6 @@
           <small>13.01.2022</small>
         </div>
       </div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">List group item heading</h5>
-        <small class="text-muted">3 days ago</small>
-      </div>
-      <p class="mb-1">Some placeholder content in a paragraph.</p>
-      <small class="text-muted">And some muted small print.</small>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">List group item heading</h5>
-        <small class="text-muted">3 days ago</small>
-      </div>
-      <p class="mb-1">Some placeholder content in a paragraph.</p>
-      <small class="text-muted">And some muted small print.</small>
     </a>
   </div>
 </div>

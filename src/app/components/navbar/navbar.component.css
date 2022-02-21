@@ -14,7 +14,6 @@ a{
   --trans:scaleY(0);
   --fitcolor:#158ad8;
   position: relative;
-  cursor: pointer;
   color: #ffffff;
   height: 50px;
   line-height: 30px;
@@ -32,8 +31,6 @@ a:hover{
 a:hover > i{
   color: var(--fitcolor);
 }
-
-
 
 a::before{
   content: '';
@@ -74,26 +71,12 @@ i{
   --trans:scaleY(1);
   --fitcolor:white ;
   background-color:rgba(128, 128, 128, 0.1) ;
-  animation: jiggle ease-in-out 400ms;
+  -webkit-animation:pulsate-fwd 0.3s ease-in-out forwards;
+  animation:pulsate-fwd 0.3s ease-in-out forwards;
 }
 
-@keyframes jiggle {
-  0% {
-    transform: none;
-  }
-  25% {
-    transform: rotate(1deg);
-  }
-
-  75% {
-    transform: rotate(-1deg);
-  }
-  100% {
-    transform: none;
-  }
-}
-
-
+@-webkit-keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(0.95);transform:scale(0.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+@keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(0.95);transform:scale(0.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}
 
 
 

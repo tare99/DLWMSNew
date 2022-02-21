@@ -16,5 +16,20 @@
   padding-left:20px;
 }
 
-.list-group{
+a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0.1%;
+  opacity: 0;
+  background-color: rgba(21, 138, 216, 0.22);
+  transition: width 1s, opacity 0.5s;
 }
+
+a:hover::before{
+  width: 100%;
+  opacity: 1;
+}
+

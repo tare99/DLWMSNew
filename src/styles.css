@@ -30,3 +30,7 @@ body{
   scrollbar-width: auto;
   scrollbar-color: #5479a0 #ffffff;
 }
+
+a{
+  cursor: pointer;
+}
