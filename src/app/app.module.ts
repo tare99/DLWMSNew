@@ -4,7 +4,6 @@ import{RouterModule} from "@angular/router";
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
-import { ContentComponent } from './components/content/content.component';
 import { DokumentiComponent } from './components/dokumenti/dokumenti.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 
@@ -13,7 +12,6 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
     AppComponent,
     NavbarComponent,
     HomepageComponent,
-    ContentComponent,
     DokumentiComponent,
     SideBarComponent,
   ],

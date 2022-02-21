@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  left: 6%;
+  left: 45px;
 }
 #inputDiv{
   padding-left: 20px;
@@ -18,17 +18,14 @@ input{
   flex-direction: row;
 }
 #bigtable{
-  width: 90%;
-  border: 1px solid rgba(0, 0, 0, 0.13);
-}
-
-#bigrow{
-  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  border-collapse:separate;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.08);
 }
 
 #smalltable{
-  margin-right:10px;
-  margin-top: 10px;
+  margin: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
 }
 
 .obv{

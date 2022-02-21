@@ -1,8 +1,11 @@
 div{
+  position: relative;
   display: flex;
   flex-direction: row;
 }
 
-app-content{
-  padding-left: 15%;
+#ruterDiv{
+  width: 60%;
+  margin-left: 15%;
 }
+

@@ -9,6 +9,13 @@ export class DokumentiComponent implements OnInit {
 
   constructor() { }
 
+  active:string='';
+
+  toggleActiveClass():string{
+    this.active==''?this.active='active':this.active='';
+    return this.active;
+  }
+
   ngOnInit(): void {
   }
 

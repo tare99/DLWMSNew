@@ -5,11 +5,10 @@
 }
 
 #sideDiv{
-  position: absolute;
-  width: 20%;
+  width: 100%;
   height: auto;
-  right:2.5%;
-  top: 99px;
+  padding-top: 60px;
+  padding-left: 80px;
 }
 #prviBlok, #drugiBlok, #treciBlok{
   box-shadow: -6px 11px 21px 7px rgba(0,0,0,0.08);
