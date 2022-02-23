@@ -6,6 +6,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { DokumentiComponent } from './components/dokumenti/dokumenti.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
+import{HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(
       [
         {path: 'homepage', component: HomepageComponent},

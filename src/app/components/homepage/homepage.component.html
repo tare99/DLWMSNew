@@ -8,17 +8,17 @@
   </div>
 
   <table id="bigtable">
-    <tr id="bigrow" *ngFor="let s of niz">
+    <tr id="bigrow" *ngFor="let s of obavijesti">
       <table id="smalltable">
         <tr>
           <td rowspan="3"><i class="bi bi-envelope-fill obv"></i></td>
-          <td><h4 style="color: #158ad8">BP::Teorijski ispit(15.02.2022) : : Spisak studenata</h4></td>
+          <td><h4 style="color: #158ad8">{{s.naslov}}</h4></td>
         </tr>
         <tr>
-          <td style="font-size:13px;color: gray">14.02.2022 17:28 - Baze podataka Napisao/la Elda Sultić</td>
+          <td style="font-size:13px;color: gray">{{s.vrijemeObjave}} Napisao/la {{s.autor}}</td>
         </tr>
         <tr>
-          <td>Upis ocjena ce se obaviti 19/02/2021 u 15:30. Na upis obavezno donijeti popunjenu i potpisanu prijavu sa tacnim datumom polaganja.</td>
+          <td>{{s.sadrzaj}}</td>
         </tr>
         <tr>
           <div style="height: 20px"></div>
